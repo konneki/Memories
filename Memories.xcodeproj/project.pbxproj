@@ -11,6 +11,8 @@
 		2FD3A845298673720091EE4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3A844298673720091EE4F /* ContentView.swift */; };
 		2FD3A847298673730091EE4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3A846298673730091EE4F /* Assets.xcassets */; };
 		2FD3A84A298673730091EE4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3A849298673730091EE4F /* Preview Assets.xcassets */; };
+		2FD3A851298674320091EE4F /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3A850298674320091EE4F /* LocationFetcher.swift */; };
+		2FD3A853298675DA0091EE4F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3A852298675DA0091EE4F /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2FD3A844298673720091EE4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2FD3A846298673730091EE4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FD3A849298673730091EE4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2FD3A850298674320091EE4F /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		2FD3A852298675DA0091EE4F /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				2FD3A842298673720091EE4F /* MemoriesApp.swift */,
 				2FD3A844298673720091EE4F /* ContentView.swift */,
+				2FD3A850298674320091EE4F /* LocationFetcher.swift */,
+				2FD3A852298675DA0091EE4F /* ImagePicker.swift */,
 				2FD3A846298673730091EE4F /* Assets.xcassets */,
 				2FD3A848298673730091EE4F /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FD3A845298673720091EE4F /* ContentView.swift in Sources */,
+				2FD3A853298675DA0091EE4F /* ImagePicker.swift in Sources */,
 				2FD3A843298673720091EE4F /* MemoriesApp.swift in Sources */,
+				2FD3A851298674320091EE4F /* LocationFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +277,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Memories/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Pin the image location on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +307,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Memories/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Pin the image location on the map";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
